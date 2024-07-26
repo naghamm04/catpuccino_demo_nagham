@@ -1,0 +1,75 @@
+--gold-crayola: hsl(38, 61%, 73%);
+--quick-silver: hsla(0, 0%, 65%, 1);
+--davys-grey: hsla(30, 3%, 34%, 1);
+--smoky-black-1: hsla(40, 12%, 5%, 1);
+--smoky-black-2: hsla(30, 8%, 5%, 1);
+--smoky-black-3: hsla(0, 3%, 7%, 1);
+--eerie-black-1: hsla(210, 4%, 9%, 1);
+--eerie-black-2: hsla(210, 4%, 11%, 1);
+--eerie-black-3: hsla(180, 2%, 8%, 1);
+--eerie-black-4: hsla(0, 0%, 13%, 1);
+--white: hsla(0, 0%, 100%, 1);
+--white-alpha-20: hsla(0, 0%, 100%, 0.2);
+--white-alpha-10: hsla(0, 0%, 100%, 0.1);
+--black: hsla(0, 0%, 0%, 1);
+--black-alpha-80: hsla(0, 0%, 0%, 0.8);
+--black-alpha-15: hsla(0, 0%, 0%, 0.15);
+
+
+  <div class="container-fluid">
+        <video height="1px" autoplay muted>
+            <source src="assests/images/catpuccino-reel.mp4" type="video/mp4" alt="Notebook" style="width:100%;">
+          </video>
+        <div class="content">
+          <h1>Catpuccino</h1>
+          <p>"Where every cup is brewed with love and every whisker is a friend."  </p>
+
+          <!-- <p>"Find your purr-sonal paradise with coffee, cats, and cozy moments."          </p> 
+           <p> "Discover a purr-fectly brewed escape with the warmth of coffee and the comfort of cats." </p> 
+           <p>"Find purrfection in every sip and cuddle—where great coffee and friendly cats create your perfect escape."</p>-->
+                   </div>
+
+
+        -- slick track 
+        '
+
+    Data Attribute Settings
+
+<div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+  <div><h3>1</h3></div>
+  <div><h3>2</h3></div>
+  <div><h3>3</h3></div>
+  <div><h3>4</h3></div>
+  <div><h3>5</h3></div>
+  <div><h3>6</h3></div>
+</div>
+
+
+`  Center Mode
+
+
+$('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
